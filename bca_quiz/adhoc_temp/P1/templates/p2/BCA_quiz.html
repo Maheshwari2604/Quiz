@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BCA Quiz</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <form method="POST" action="{% url 'quiz'%}">
+    
+    {% csrf_token %}
+  <h2>Quiz: BCA</h2>
+  <p>1) Computer programmers often refer to memory addresses using ____
+    notation, or base 16.
+    </p>
+    <div class="radio">
+        <label><input type="radio" name="qus1" onclick="myFunction(this.value)" value="binary">binary</label>
+        <br>
+        <label><input type="radio" name="qus1" onclick="myFunction(this.value)" value="indirect">indirect</label>
+        <br>
+        <label><input type="radio" name="qus1" onclick="myFunction(this.value)" value="mathematical">mathematical</label>
+        <br>
+      <label><input type="radio" name="qus1" onclick="myFunction(this.value)" value="hexadecimal">hexadecimal</label>
+      <br></div>
+
+
+  <p>2) In which of the following cases, linked list implementation of sparse matrices consumes the same memory space as the conventional way of storing the entire array?
+    </p>
+    <div class="radio">
+        <label><input type="radio" name="qus2" onclick="myFunction(this.value)" value="5x6 matrix with 9 non-zero entries">5x6 matrix with 9 non-zero entries</label>
+        <br>
+        <label><input type="radio" name="qus2" onclick="myFunction(this.value)" value="5x6 matrix with 10 non-zero entries">5x6 matrix with 10 non-zero entries</label>
+        <br>
+        <label><input type="radio" name="qus2" onclick="myFunction(this.value)" value="Efficient in accessing an entry">Efficient in accessing an entry</label>
+        <br>
+          <label><input type="radio" name="qus2" onclick="myFunction(this.value)" value="Efficient if the sparse matrix is a band matrix">Efficient if the sparse matrix is a band matrix</label>
+        </div>
+
+  <p>3) Point out the wrong statement :
+    </p>
+    <div class="radio">
+        <label><input type="radio" name="qus3" checked, value="abs"> The massive scale of cloud computing systems was enabled by the popularization of the Internet
+        </label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="qus3", value="Soft computing represents a real paradigm shift in the way in which systems are deployed">Soft computing represents a real paradigm shift in the way in which systems are deployed
+        </label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="qus3" value="asdfsad">Cloud computing makes the long-held dream of utility computing possible with a pay-as-you-go, infinitely scalable, universally available system.</label>
+      </div>
+      <div class="radio">
+          <label><input type="radio" name="qus3" value="asdfasdbsadb">All of the mentioned
+          </label>
+        </div>
+  <p>4) A type of VR environment in which subjects are visually isolated from the real environment.
+    </p>
+    <div class="radio">
+        <label><input type="radio" name="qus4" value="Immersive">Immersive</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="qus4" value="asdsadfasdfasf">Semi immersive
+        </label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="qus4" value="asdfasdfasaa">Non-immersive</label>
+      </div>
+      <div class="radio">
+          <label><input type="radio" name="qus4" value="12wsda">Augmented</label>
+        </div>
+  <p>5) Choose the correct statements:
+    </p>
+    <div class="radio">
+        <label><input type="radio" name="qus5" value="asdf11"> The elements of the array should be of the same data type and storage class
+        </label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="qus5" value="The number of subscripts determines the dimension of the array">The number of subscripts determines the dimension of the array
+        </label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="qus5" value="lksdah">The array elements need not be of the same storage class
+        </label>
+      </div>
+      <div class="radio">
+          <label><input type="radio" name="qus5" value="dksjfhlasd">In an array definition. the subscript can be any expression yielding non-zero integer value
+          </label>
+        </div>
+  <p>6) What is sizeof() in C?
+    </p>
+    <div class="radio">
+        <label><input type="radio" name="qus6" value="sdafhsdalkj">Operator</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="qus6" value="Function">Function</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="qus6" value="dsajfhksdaljfblkj">Macro</label>
+      </div>
+      <div class="radio">
+          <label><input type="radio" name="qus6" value="skdajfhjlsdakbf">None of these</label>
+        </div>
+  <p>7) What will be the output?
+    void main() { 
+        int a = printf ("CppBuzz.com");
+        printf("%d", a);
+    }    
+    </p>
+    <div class="radio">
+        <label><input type="radio" name="qus7" value="a;ldskflkjsdafnsda"> Compilation Error
+        </label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="qus7" value="ljsdaf">0</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="qus7" value="sadflakjsdn"> CppBuzz.com</label>
+      </div>
+      <div class="radio">
+          <label><input type="radio" name="qus7" value="CppBuzz.com11"> CppBuzz.com11
+          </label>
+        </div>
+  <p>8) What will be the output?
+    #include<stdio.h>
+    int main(int argc, char  argv){
+    char items;
+    int j = 3, i;
+    items = argv;
+    for(i = 1; (i%4); i++)
+    {
+    int p = &items[j];
+    printf("%c", p);
+    j--;
+    }
+    return 0;
+    }
+    The above code is run with three command line parameters mentioned below: 
+    
+    Paper Ink Pen
+    
+    What will be the output of the above program?
+    
+    </p>
+    <div class="radio">
+        <label><input type="radio" name="qus8" id="qus8" value="PIP">PIP</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="qus8" id="qus8" value="sad;kjfhlksdaj">Pen</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="qus8" id="qus8" value="lij">Pap</label>
+      </div>
+      <div class="radio">
+          <label><input type="radio" name="qus8" id="qus8" value="lk ">Ink</label>
+        </div>
+  <p>9) Which of the following statements is FALSE?
+    </p>
+    <div class="radio">
+        <label><input type="radio" name="qus9" value="lmmdsakn">The time complexity of a binary search is O(log n).
+        </label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="qus9" value="A linear search requires a sorted list.">A linear search requires a sorted list.
+        </label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="qus9" value="bbn">A binary search can operate only on a sorted list.
+        </label>
+      </div>
+      <div class="radio">
+          <label><input type="radio" name="qus9" value="mnnmn">The time complexity of the linear search is O(n).
+          </label>
+        </div>
+  <p>10) The inorder and preorder traversal of a binary tree are d b e a f c g and a b d e c f g, respectively. The post-order traversal of the binary tree is:
+    </p>
+    <div class="radio">
+        <label><input type="radio" name="qus10" value="d e b f g c a">d e b f g c a
+        </label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="qus10" value="(a) d e b f g c a
+mas          ">d e f g b c a</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="qus10" value="raea">e d b f g c a
+        </label>
+      </div>
+      <div class="radio">
+          <label><input type="radio" name="qus10" value="khjn">e d b g f c a 
+          </label>
+        </div>
+  <p>11) What does the following declaration mean?
+    int (*ptr)[10];    
+    </p>
+    <div class="radio">
+        <label><input type="radio" name="qus11" value="m,mkjknjn">ptr is an array of pointers to 10 integers
+        </label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="qus11" value="ptr is a pointer to an array of 10 integers">ptr is a pointer to an array of 10 integers
+        </label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="qus11" value="jhwgheb">ptr is an array of 10 integers
+        </label>
+      </div>
+      <div class="radio">
+          <label><input type="radio" name="qus11" value="jsadw">ptr is a pointer to an array
+          </label>
+        </div>
+  <p>12) if a person walks at 14 km/hr instead of 10 km/hr, he would have walked 20 km more. The actual distance travelled by him is:
+
+    </p>
+    <div class="radio">
+        <label><input type="radio" name="qus12" value="50 km">50 km
+        </label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="qus12" value="aslkd;jf">56 km
+        </label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="qus12" value="ioweuie">70 km
+        </label>
+      </div>
+      <div class="radio">
+          <label><input type="radio" name="qus12" value="932uklj">80 km</label>
+        </div>
+  <p>13 ) A hall is 15 m long and 12 m broad. If the sum of the areas of the floor and the ceiling is equal to the sum of the areas of four walls, the volume of the hall is:
+    </p>
+    <div class="radio">
+        <label><input type="radio" name="qus13" value="65465">720</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="qus13" value="56">900</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="qus13" value="1200">1200</label>
+      </div>
+      <div class="radio">
+          <label><input type="radio" name="qus13" value="6548513">1800</label>
+        </div>
+  <p>14) The banker's gain on a sum due 3 years hence at 12% per annum is Rs. 270. The banker's discount is:
+</p>
+<div class="radio">
+    <label><input type="radio" name="qus14" value="Rs. 960">Rs. 960
+    </label>
+  </div>
+  <div class="radio">
+    <label><input type="radio" name="qus14" value="RS. 840">Rs. 840
+    </label>
+  </div>
+  <div class="radio">
+    <label><input type="radio" name="qus14" value="Rs. 1020">Rs. 1020
+    </label>
+  </div>
+  <div class="radio">
+      <label><input type="radio" name="qus14" value="Rs. 760">Rs. 760
+      </label>
+    </div>
+  <p>15) In how many different ways can the letters of the word 'CORPORATION' be arranged so that the vowels always come together?
+    </p>
+    <div class="radio">
+        <label><input type="radio" name="qus15" value="810">810
+        </label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="qus15" value="1440">1440</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="qus15" value="2880">2880</label>
+      </div>
+      <div class="radio">
+          <label><input type="radio" name="qus15" value="50400">50400</label>
+        </div>
+<p>16) 1. Solve the equation for x : 6x - 27 + 3x = 4 + 9 - x
+</p>
+<div class="radio">
+    <label><input type="radio" name="qus16" value="4">4</label>
+  </div>
+  <div class="radio">
+    <label><input type="radio" name="qus16" value="5">5</label>
+  </div>
+  <div class="radio">
+    <label><input type="radio" name="qus16" value="6">6</label>
+  </div>
+  <div class="radio">
+      <label><input type="radio" name="qus16" value="-4">-4</label>
+    </div>
+
+  <p>17) Two pipes A and B can separately fill a tank in 2 minutes and 15 minutes respectively. Both the pipes are opened together but 4 minutes after the start the pipe A is turned off. How much time will it take to fill the tank?
+
+    </p>
+    <div class="radio">
+        <label><input type="radio" name="qus17" value="9 min">9 min</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="qus17" value="10 min">10 min</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="qus17" value="11 min">11 min</label>
+      </div>
+      <div class="radio">
+          <label><input type="radio" name="qus17" value="12 min">12 min</label>
+        </div>
+  <p>18) 1-In how many ways the letter ‘SOLVING’ can be rearranged to make 7 letter words such that none of the letters repeats?
+    </p>
+    <div class="radio">
+        <label><input type="radio" name="qus18" value="49">49</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="qus18" value="None of the above">None of the above
+        </label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="qus18", value="5040">5040</label>
+      </div>
+      <div class="radio">
+          <label><input type="radio" name="qus18" value="7C7">7C7</label>
+        </div>
+  <p>19)  If “*” is called “+”, “/” is called “*”, “-” is called  “/”, “+” is called “-”. 40/20 – 5 * 10 + 5 = ?
+    </p>
+    <div class="radio">
+        <label><input type="radio" name="qus19" value="170">170</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="qus19" value="160">160</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="qus19" value="150">150</label>
+      </div>
+      <div class="radio">
+          <label><input type="radio" name="qus19" value="None of these">None of these</label>
+        </div>
+  <p>20) In a code language “He gives flower” is written as “nop lui na” , “Bunty gets flower” is written as “dus lap na” and “He gets nothing” is written as “nop lap ugli”. How would “Bunty gets nothing” be written in that code ? 
+</p>
+<div class="radio">
+    <label><input type="radio" name="qus20" value="dus lap nop">dus lap nop
+    </label>
+  </div>
+  <div class="radio">
+    <label><input type="radio" name="qus20" value="na lap ugli">na lap ugli
+    </label>
+  </div>
+  <div class="radio">
+    <label><input type="radio" name="qus20" value="lui lap ugli">lui lap ugli
+    </label>
+  </div>
+  <div class="radio">
+      <label><input type="radio" name="qus20" value="dus lap ugli">dus lap ugli
+      </label>
+    </div>
+  
+
+<input type="submit" value="Submit the quiz" >
+</form>
+<!-- <button onclick="myFunction()">Try it</button>
+Your favorite browser is: <input type="text" id="result">
+Your favorite browser is: <input type="text" id="result1">
+
+<script>
+function myFunction(qus1) {
+  document.getElementById("result").value = qus1;
+}
+function myFunction(qus2) {
+  document.getElementById("result1").value = qus2;
+}
+</script> -->
+
+</body>
+
+</html>
